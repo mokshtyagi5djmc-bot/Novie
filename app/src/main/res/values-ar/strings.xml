@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Novie</string>
+    <string name="tagline">تحليلات التدفق النقدي التنفيذية</string>
+    <string name="nav_dashboard">الرئيسية</string>
+    <string name="nav_charts">الرسوم</string>
+    <string name="nav_reports">التقارير</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <string name="welcome_title">حوّل جداول إكسل إلى رسوم بيانية واضحة</string>
+    <string name="welcome_subtitle">اختر طريقة حفظ تقاريرك المالية في نوفي. يمكنك التبديل في أي وقت من الإعدادات.</string>
+    <string name="mode_private_title">خاص على الجهاز</string>
+    <string name="mode_private_desc">تخزين محلي آمن. لا تغادر ملفات إكسل الخاصة بك هذا الجهاز مطلقًا.</string>
+    <string name="mode_cloud_title">مزامنة جوجل</string>
+    <string name="mode_cloud_desc">نسخ احتياطي سحابي فوري مرتبط بحسابك في جوجل عبر أجهزتك.</string>
+    <string name="continue_private">المتابعة في الوضع الخاص</string>
+    <string name="sign_in_google">تسجيل الدخول عبر جوجل</string>
+    <string name="sign_out">تسجيل الخروج</string>
+    <string name="signed_in_as">مسجل باسم %1$s</string>
+
+    <string name="import_excel">استيراد MS Excel</string>
+    <string name="import_excel_sub">اختر ملف تدفق نقدي .xlsx أو .csv</string>
+    <string name="sample_templates_title">قوالب إكسل جاهزة</string>
+    <string name="sample_templates_sub">اعرض رسوماً بيانية واقعية بنقرة واحدة أو صدّر كملف .xlsx</string>
+    <string name="load_template">عرض الرسوم</string>
+    <string name="export_xlsx">تصدير .xlsx</string>
+    <string name="template_saas_title">تدفق نقدي لشركة SaaS</string>
+    <string name="template_saas_sub">٩ أشهر · اشتراكات، شركات، رواتب، سحابة</string>
+    <string name="template_retail_title">دفتر التجزئة والتجارة الإلكترونية</string>
+    <string name="template_retail_sub">٦ أشهر · مبيعات، متجر إلكتروني، مخزون</string>
+    <string name="template_studio_title">التدفق السنوي لاستوديو إبداعي</string>
+    <string name="template_studio_sub">٦ أشهر · عقود شهرية، مشاريع، متعاقدون</string>
+
+    <string name="kpi_inflow">إجمالي التدفق الداخل</string>
+    <string name="kpi_outflow">إجمالي التدفق الخارج</string>
+    <string name="kpi_net">صافي التدفق النقدي</string>
+    <string name="kpi_margin">الهامش التشغيلي</string>
+    <string name="kpi_burn">متوسط الإنفاق الشهري</string>
+    <string name="kpi_savings">نسبة الاحتفاظ</string>
+
+    <string name="chart_bar_grouped">أعمدة</string>
+    <string name="chart_bar_stacked">مكدس</string>
+    <string name="chart_pie_donut">دائري</string>
+    <string name="chart_line_trend">اتجاه</string>
+    <string name="chart_inflow">الداخل</string>
+    <string name="chart_outflow">الخارج</string>
+    <string name="chart_net">الصافي</string>
+    <string name="chart_cumulative">الرصيد التراكمي</string>
+    <string name="chart_toggle_outflow">توزيع المصروفات</string>
+    <string name="chart_toggle_inflow">توزيع الإيرادات</string>
+    <string name="chart_center_total">الإجمالي</string>
+    <string name="chart_tap_hint">انقر على أي عمود أو شريحة أو نقطة لعرض التفاصيل</string>
+
+    <string name="ai_insights_title">رؤى مالية بالذكاء الاصطناعي</string>
+    <string name="ai_insights_subtitle">تحليل تنفيذي للتدفق النقدي عبر Gemini</string>
+    <string name="ai_analyze_btn">تحليل بالذكاء الاصطناعي</string>
+    <string name="ai_reanalyze_btn">تحديث التحليل</string>
+    <string name="ai_analyzing">جاري تحليل أنماط التدفق النقدي…</string>
+    <string name="ai_findings_header">أبرز النتائج</string>
+    <string name="ai_recommendations_header">إجراءات مقترحة</string>
+
+    <string name="empty_dashboard_title">لا يوجد تقرير محمّل</string>
+    <string name="empty_dashboard_desc">استورد ملف إكسل (.xlsx / .csv) أو اختر قالب أعمال جاهز أدناه لإنشاء الرسوم البيانية.</string>
+
+    <string name="import_preview_title">مطابقة أعمدة إكسل</string>
+    <string name="report_title_label">عنوان التقرير</string>
+    <string name="sheet_label">ورقة العمل</string>
+    <string name="base_currency_label">العملة المصدرية</string>
+    <string name="col_period">عمود الفترة / التاريخ</string>
+    <string name="col_category">عمود الفئة</string>
+    <string name="col_inflow">عمود التدفق الداخل (اختياري)</string>
+    <string name="col_outflow">عمود التدفق الخارج (اختياري)</string>
+    <string name="col_type">عمود النوع (داخل/خارج)</string>
+    <string name="col_amount">عمود المبلغ</string>
+    <string name="col_none">بدون</string>
+    <string name="preview_rows_count">تم اكتشاف %1$d صف · %2$d قيد جاهز</string>
+    <string name="save_and_visualize">حفظ وعرض الرسوم</string>
+    <string name="cancel">إلغاء</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="delete">حذف</string>
+    <string name="rename">إعادة تسمية</string>
+    <string name="save">حفظ</string>
+
+    <string name="reports_title">التقارير المحفوظة</string>
+    <string name="reports_empty">لا توجد تقارير محفوظة بعد. استورد ملف إكسل أو حمّل قالباً.</string>
+    <string name="ledger_preview">أحدث قيود التدفق النقدي</string>
+    <string name="entries_count">%1$d قيد</string>
+    <string name="cloud_badge">متزامن</string>
+    <string name="private_badge">خاص</string>
+
+    <string name="settings_title">مساحة العمل والتفضيلات</string>
+    <string name="settings_currency">عملة العرض</string>
+    <string name="settings_convert_rates">تحويل المبالغ باستخدام أسعار الصرف</string>
+    <string name="settings_convert_rates_desc">عند الإيقاف، يحافظ التطبيق على الأرقام كما هي ويطبّق رمز العملة المختار فقط.</string>
+    <string name="settings_language">لغة التطبيق</string>
+    <string name="settings_storage">وضع التخزين والمزامنة</string>
+    <string name="sync_local_to_cloud">رفع التقارير الخاصة إلى مزامنة جوجل</string>
+    <string name="sync_success_msg">تمت مزامنة %1$d تقرير(تقارير) إلى سحابة جوجل.</string>
+    <string name="auth_gate_title">ربط مزامنة جوجل</string>
+    <string name="auth_gate_desc">سجّل الدخول بحساب جوجل لعرض ومزامنة تقاريرك السحابية، أو عد إلى الوضع الخاص.</string>
+    <string name="export_success">تم حفظ قالب إكسل .xlsx بنجاح.</string>
+    <string name="choose_another_file">اختيار ملف</string>
+    <string name="parsing_file_status">جاري قراءة ملف Excel / CSV…</string>
+    <string name="no_mapped_entries_hint">لم تتطابق أي مبالغ تدفق نقدي صالحة مع هذه الأعمدة. عدّل تعيين التدفق الداخل أو الخارج أو المبلغ أعلاه.</string>
+</resources>

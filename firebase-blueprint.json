@@ -1,0 +1,111 @@
+{
+  "entities": {
+    "CashFlowEntry": {
+      "title": "CashFlowEntry",
+      "description": "A single inflow or outflow line item parsed from an MS Excel or CSV cash flow sheet.",
+      "type": "object",
+      "properties": {
+        "periodLabel": {
+          "type": "string",
+          "description": "Period label such as 2026-01 or Jan 2026."
+        },
+        "dateMillis": {
+          "type": "integer",
+          "description": "Normalized epoch milliseconds for chronological sorting."
+        },
+        "category": {
+          "type": "string",
+          "description": "Business category such as Revenue, Payroll, Marketing, or Operations."
+        },
+        "type": {
+          "type": "string",
+          "enum": ["INFLOW", "OUTFLOW"],
+          "description": "Direction of cash movement."
+        },
+        "amount": {
+          "type": "number",
+          "description": "Non-negative monetary amount in the report's base currency."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional description or memo from the spreadsheet row."
+        }
+      },
+      "required": ["periodLabel", "dateMillis", "category", "type", "amount"]
+    },
+    "CashFlowReport": {
+      "title": "CashFlowReport",
+      "description": "User-owned MS Excel cash flow report synced to Cloud Firestore.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the report owner."
+        },
+        "title": {
+          "type": "string",
+          "description": "Human-readable report title."
+        },
+        "sourceFileName": {
+          "type": "string",
+          "description": "Original Excel or CSV filename."
+        },
+        "sheetName": {
+          "type": "string",
+          "description": "Selected worksheet name."
+        },
+        "baseCurrencyCode": {
+          "type": "string",
+          "description": "ISO currency code of the imported amounts (e.g. USD, EUR, INR)."
+        },
+        "totalInflow": {
+          "type": "number",
+          "description": "Sum of all inflow amounts."
+        },
+        "totalOutflow": {
+          "type": "number",
+          "description": "Sum of all outflow amounts."
+        },
+        "entryCount": {
+          "type": "integer",
+          "description": "Count of entries stored in the report."
+        },
+        "entries": {
+          "type": "array",
+          "description": "Bounded list of up to 400 cash flow entries."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server creation timestamp written via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server update timestamp written via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "title",
+        "sourceFileName",
+        "sheetName",
+        "baseCurrencyCode",
+        "totalInflow",
+        "totalOutflow",
+        "entryCount",
+        "entries",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/cashFlowReports/{reportId}": {
+      "schema": {
+        "$ref": "#/entities/CashFlowReport"
+      },
+      "description": "Private user-scoped collection storing synced Excel cash flow reports."
+    }
+  }
+}

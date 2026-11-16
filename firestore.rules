@@ -1,0 +1,118 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global default-deny safety net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidNumber(val) {
+      return (val is int || val is float) && val >= 0;
+    }
+
+    function isValidCashFlowReport(data, userId) {
+      return data.userId is string &&
+             data.userId == userId &&
+             data.userId.size() >= 1 &&
+             data.userId.size() <= 128 &&
+             data.title is string &&
+             data.title.size() >= 1 &&
+             data.title.size() <= 120 &&
+             data.sourceFileName is string &&
+             data.sourceFileName.size() >= 1 &&
+             data.sourceFileName.size() <= 160 &&
+             data.sheetName is string &&
+             data.sheetName.size() >= 1 &&
+             data.sheetName.size() <= 80 &&
+             data.baseCurrencyCode is string &&
+             data.baseCurrencyCode.size() >= 3 &&
+             data.baseCurrencyCode.size() <= 6 &&
+             isValidNumber(data.totalInflow) &&
+             isValidNumber(data.totalOutflow) &&
+             data.entryCount is int &&
+             data.entryCount >= 0 &&
+             data.entryCount <= 400 &&
+             data.entries is list &&
+             data.entries.size() <= 400 &&
+             (data.entries.size() == 0 || data.entries[0] is map) &&
+             data.createdAt is timestamp &&
+             data.createdAt <= request.time &&
+             data.updatedAt is timestamp &&
+             data.updatedAt <= request.time;
+    }
+
+    match /users/{userId}/cashFlowReports/{reportId} {
+      allow list: if isOwner(userId);
+      allow get: if isOwner(userId) && isValidId(reportId);
+
+      allow create: if isOwner(userId) &&
+                       isValidId(reportId) &&
+                       incoming().keys().hasAll([
+                         'userId',
+                         'title',
+                         'sourceFileName',
+                         'sheetName',
+                         'baseCurrencyCode',
+                         'totalInflow',
+                         'totalOutflow',
+                         'entryCount',
+                         'entries',
+                         'createdAt',
+                         'updatedAt'
+                       ]) &&
+                       incoming().keys().hasOnly([
+                         'userId',
+                         'title',
+                         'sourceFileName',
+                         'sheetName',
+                         'baseCurrencyCode',
+                         'totalInflow',
+                         'totalOutflow',
+                         'entryCount',
+                         'entries',
+                         'createdAt',
+                         'updatedAt'
+                       ]) &&
+                       isValidCashFlowReport(incoming(), userId);
+
+      allow update: if isOwner(userId) &&
+                       isValidId(reportId) &&
+                       incoming().userId == existing().userId &&
+                       incoming().createdAt == existing().createdAt &&
+                       isValidCashFlowReport(incoming(), userId) &&
+                       incoming().diff(existing()).affectedKeys().hasOnly([
+                         'title',
+                         'sourceFileName',
+                         'sheetName',
+                         'baseCurrencyCode',
+                         'totalInflow',
+                         'totalOutflow',
+                         'entryCount',
+                         'entries',
+                         'updatedAt'
+                       ]);
+
+      allow delete: if isOwner(userId) && isValidId(reportId);
+    }
+  }
+}

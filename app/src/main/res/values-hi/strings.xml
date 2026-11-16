@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Novie</string>
+    <string name="tagline">कार्यकारी कैश फ्लो एनालिटिक्स</string>
+    <string name="nav_dashboard">डैशबोर्ड</string>
+    <string name="nav_charts">चार्ट</string>
+    <string name="nav_reports">रिपोर्ट्स</string>
+    <string name="nav_settings">सेटिंग्स</string>
+
+    <string name="welcome_title">MS Excel कैश फ्लो को स्पष्ट विज़ुअल्स में बदलें</string>
+    <string name="welcome_subtitle">चुनें कि Novie आपकी वित्तीय रिपोर्ट्स कैसे सहेजे। आप सेटिंग्स से कभी भी बदल सकते हैं।</string>
+    <string name="mode_private_title">डिवाइस पर निजी</string>
+    <string name="mode_private_desc">स्थानीय SQLite स्टोरेज। आपकी Excel फाइलें कभी इस डिवाइस से बाहर नहीं जातीं।</string>
+    <string name="mode_cloud_title">Google सिंक</string>
+    <string name="mode_cloud_desc">आपके Google खाते के साथ सभी डिवाइस पर रीयल-टाइम Cloud Firestore बैकअप।</string>
+    <string name="continue_private">निजी मोड में जारी रखें</string>
+    <string name="sign_in_google">Google से साइन इन करें</string>
+    <string name="sign_out">साइन आउट</string>
+    <string name="signed_in_as">%1$s के रूप में साइन इन</string>
+
+    <string name="import_excel">MS Excel इम्पोर्ट करें</string>
+    <string name="import_excel_sub">.xlsx या .csv कैश फ्लो शीट चुनें</string>
+    <string name="sample_templates_title">अंतर्निहित Excel टेम्पलेट्स</string>
+    <string name="sample_templates_sub">एक टैप में वास्तविक कैश फ्लो चार्ट देखें या .xlsx एक्सपोर्ट करें</string>
+    <string name="load_template">विज़ुअलाइज़ करें</string>
+    <string name="export_xlsx">.xlsx एक्सपोर्ट</string>
+    <string name="template_saas_title">SaaS स्टार्टअप कैश फ्लो</string>
+    <string name="template_saas_sub">9 महीने · MRR, एंटरप्राइज, पेरोल, क्लाउड</string>
+    <string name="template_retail_title">रिटेल व ई-कॉमर्स बहीखाता</string>
+    <string name="template_retail_sub">6 महीने · स्टोर, वेबस्टोर, इन्वेंटरी</string>
+    <string name="template_studio_title">क्रिएटिव स्टूडियो वार्षिक फ्लो</string>
+    <string name="template_studio_sub">6 महीने · रिटेनर, प्रोजेक्ट, कॉन्ट्रैक्टर</string>
+
+    <string name="kpi_inflow">कुल आवक</string>
+    <string name="kpi_outflow">कुल व्यय</string>
+    <string name="kpi_net">शुद्ध कैश फ्लो</string>
+    <string name="kpi_margin">ऑपरेटिंग मार्जिन</string>
+    <string name="kpi_burn">औसत मासिक खर्च</string>
+    <string name="kpi_savings">बचत अनुपात</string>
+
+    <string name="chart_bar_grouped">बार ग्राफ</string>
+    <string name="chart_bar_stacked">स्टैक्ड बार</string>
+    <string name="chart_pie_donut">पाई और डोनट</string>
+    <string name="chart_line_trend">लाइन ट्रेंड</string>
+    <string name="chart_inflow">आवक</string>
+    <string name="chart_outflow">व्यय</string>
+    <string name="chart_net">शुद्ध</string>
+    <string name="chart_cumulative">संचयी शेष</string>
+    <string name="chart_toggle_outflow">व्यय हिस्सा</string>
+    <string name="chart_toggle_inflow">आवक हिस्सा</string>
+    <string name="chart_center_total">कुल</string>
+    <string name="chart_tap_hint">मान देखने के लिए किसी बार, स्लाइस या बिंदु पर टैप करें</string>
+
+    <string name="ai_insights_title">AI वित्तीय विश्लेषण</string>
+    <string name="ai_insights_subtitle">Gemini द्वारा संचालित कार्यकारी कैश फ्लो सारांश</string>
+    <string name="ai_analyze_btn">AI से विश्लेषण करें</string>
+    <string name="ai_reanalyze_btn">विश्लेषण रीफ्रेश करें</string>
+    <string name="ai_analyzing">कैश फ्लो पैटर्न का विश्लेषण हो रहा है…</string>
+    <string name="ai_findings_header">मुख्य निष्कर्ष</string>
+    <string name="ai_recommendations_header">अनुशंसित कदम</string>
+
+    <string name="empty_dashboard_title">कोई कैश फ्लो रिपोर्ट लोड नहीं है</string>
+    <string name="empty_dashboard_desc">बार, पाई और ट्रेंड चार्ट बनाने के लिए MS Excel (.xlsx / .csv) फाइल इम्पोर्ट करें या नीचे सैंपल टेम्पलेट चुनें।</string>
+
+    <string name="import_preview_title">Excel कॉलम मैप करें</string>
+    <string name="report_title_label">रिपोर्ट शीर्षक</string>
+    <string name="sheet_label">वर्कशीट</string>
+    <string name="base_currency_label">स्रोत मुद्रा</string>
+    <string name="col_period">अवधि / तारीख कॉलम</string>
+    <string name="col_category">श्रेणी कॉलम</string>
+    <string name="col_inflow">आवक कॉलम (वैकल्पिक)</string>
+    <string name="col_outflow">व्यय कॉलम (वैकल्पिक)</string>
+    <string name="col_type">प्रकार कॉलम (आवक/व्यय)</string>
+    <string name="col_amount">राशि कॉलम</string>
+    <string name="col_none">कोई नहीं</string>
+    <string name="preview_rows_count">%1$d पंक्तियाँ मिलीं · %2$d प्रविष्टियाँ तैयार</string>
+    <string name="save_and_visualize">सहेजें और चार्ट देखें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="retry">पुनः प्रयास करें</string>
+    <string name="delete">हटाएँ</string>
+    <string name="rename">नाम बदलें</string>
+    <string name="save">सहेजें</string>
+
+    <string name="reports_title">सहेजी गई रिपोर्ट्स</string>
+    <string name="reports_empty">अभी तक कोई रिपोर्ट सहेजी नहीं गई है। Excel शीट इम्पोर्ट करें या टेम्पलेट आज़माएँ।</string>
+    <string name="ledger_preview">हालिया कैश फ्लो प्रविष्टियाँ</string>
+    <string name="entries_count">%1$d प्रविष्टियाँ</string>
+    <string name="cloud_badge">सिंक्ड</string>
+    <string name="private_badge">निजी</string>
+
+    <string name="settings_title">कार्यक्षेत्र और प्राथमिकताएँ</string>
+    <string name="settings_currency">प्रदर्शन मुद्रा</string>
+    <string name="settings_convert_rates">संदर्भ विनिमय दरों से राशि बदलें</string>
+    <string name="settings_convert_rates_desc">बंद होने पर Novie मूल संख्याएँ रखता है और केवल चुना गया मुद्रा चिह्न दिखाता है।</string>
+    <string name="settings_language">ऐप की भाषा</string>
+    <string name="settings_storage">स्टोरेज और सिंक मोड</string>
+    <string name="sync_local_to_cloud">निजी रिपोर्ट्स Google सिंक पर अपलोड करें</string>
+    <string name="sync_success_msg">%1$d रिपोर्ट Google क्लाउड पर सिंक हुई।</string>
+    <string name="auth_gate_title">Google सिंक कनेक्ट करें</string>
+    <string name="auth_gate_desc">क्लाउड रिपोर्ट देखने और सिंक करने के लिए Google से साइन इन करें, या निजी मोड पर वापस जाएँ।</string>
+    <string name="export_success">Excel .xlsx टेम्पलेट सफलतापूर्वक सहेजा गया।</string>
+    <string name="choose_another_file">फाइल चुनें</string>
+    <string name="parsing_file_status">Excel / CSV फाइल पढ़ी जा रही है…</string>
+    <string name="no_mapped_entries_hint">इन कॉलम में कोई मान्य कैश फ्लो राशि नहीं मिली। ऊपर आवक, व्यय या राशि कॉलम मैपिंग बदलें।</string>
+</resources>

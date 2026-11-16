@@ -1,0 +1,6 @@
+{
+  "name": "Novie",
+  "description": "Executive business cash flow analyzer that turns MS Excel spreadsheets into interactive bar, pie, donut, and trend charts with multi-currency, 5-language support, and AI insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

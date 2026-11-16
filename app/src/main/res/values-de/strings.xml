@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Novie</string>
+    <string name="tagline">Executive Cashflow-Analyse</string>
+    <string name="nav_dashboard">Übersicht</string>
+    <string name="nav_charts">Diagramme</string>
+    <string name="nav_reports">Berichte</string>
+    <string name="nav_settings">Einstellungen</string>
+
+    <string name="welcome_title">Excel-Cashflows in klare Visualisierungen verwandeln</string>
+    <string name="welcome_subtitle">Wählen Sie, wie Novie Ihre Finanzberichte speichert. Jederzeit in den Einstellungen änderbar.</string>
+    <string name="mode_private_title">Privat auf dem Gerät</string>
+    <string name="mode_private_desc">Lokaler SQLite-Speicher. Ihre Excel-Tabellen verlassen dieses Gerät niemals.</string>
+    <string name="mode_cloud_title">Google-Synchronisierung</string>
+    <string name="mode_cloud_desc">Echtzeit-Cloud-Firestore-Backup über Ihr Google-Konto auf allen Geräten.</string>
+    <string name="continue_private">Im Privatmodus fortfahren</string>
+    <string name="sign_in_google">Mit Google anmelden</string>
+    <string name="sign_out">Abmelden</string>
+    <string name="signed_in_as">Angemeldet als %1$s</string>
+
+    <string name="import_excel">MS Excel importieren</string>
+    <string name="import_excel_sub">.xlsx- oder .csv-Cashflow-Tabelle wählen</string>
+    <string name="sample_templates_title">Integrierte Excel-Vorlagen</string>
+    <string name="sample_templates_sub">Realistische Cashflows sofort visualisieren oder als .xlsx exportieren</string>
+    <string name="load_template">Visualisieren</string>
+    <string name="export_xlsx">.xlsx exportieren</string>
+    <string name="template_saas_title">SaaS-Startup-Cashflow</string>
+    <string name="template_saas_sub">9 Monate · MRR, Enterprise, Gehälter, Cloud</string>
+    <string name="template_retail_title">Einzelhandel &amp; E-Commerce</string>
+    <string name="template_retail_sub">6 Monate · Filiale, Onlineshop, Wareneinsatz</string>
+    <string name="template_studio_title">Kreativstudio Jahresfluss</string>
+    <string name="template_studio_sub">6 Monate · Retainer, Projekte, Freelancer</string>
+
+    <string name="kpi_inflow">Gesamtzufluss</string>
+    <string name="kpi_outflow">Gesamtabfluss</string>
+    <string name="kpi_net">Netto-Cashflow</string>
+    <string name="kpi_margin">Operative Marge</string>
+    <string name="kpi_burn">Ø Monatsabfluss</string>
+    <string name="kpi_savings">Rücklagenquote</string>
+
+    <string name="chart_bar_grouped">Balken</string>
+    <string name="chart_bar_stacked">Gestapelt</string>
+    <string name="chart_pie_donut">Kreis</string>
+    <string name="chart_line_trend">Verlauf</string>
+    <string name="chart_inflow">Zufluss</string>
+    <string name="chart_outflow">Abfluss</string>
+    <string name="chart_net">Netto</string>
+    <string name="chart_cumulative">Kumulierter Saldo</string>
+    <string name="chart_toggle_outflow">Abfluss-Anteil</string>
+    <string name="chart_toggle_inflow">Zufluss-Anteil</string>
+    <string name="chart_center_total">Gesamt</string>
+    <string name="chart_tap_hint">Tippen Sie auf Balken, Segmente oder Punkte für Details</string>
+
+    <string name="ai_insights_title">KI-Finanzanalysen</string>
+    <string name="ai_insights_subtitle">Management-Zusammenfassung mit Gemini</string>
+    <string name="ai_analyze_btn">Mit KI analysieren</string>
+    <string name="ai_reanalyze_btn">Analyse aktualisieren</string>
+    <string name="ai_analyzing">Cashflow-Muster werden analysiert…</string>
+    <string name="ai_findings_header">Wichtige Erkenntnisse</string>
+    <string name="ai_recommendations_header">Empfohlene Maßnahmen</string>
+
+    <string name="empty_dashboard_title">Kein Cashflow-Bericht geladen</string>
+    <string name="empty_dashboard_desc">Importieren Sie eine MS Excel-Datei (.xlsx / .csv) oder laden Sie eine Vorlage für Balken-, Kreis- und Verlaufsdiagramme.</string>
+
+    <string name="import_preview_title">Excel-Spalten zuordnen</string>
+    <string name="report_title_label">Berichtstitel</string>
+    <string name="sheet_label">Arbeitsblatt</string>
+    <string name="base_currency_label">Quellwährung</string>
+    <string name="col_period">Zeitraum / Datumsspalte</string>
+    <string name="col_category">Kategoriespalte</string>
+    <string name="col_inflow">Zuflussspalte (Optional)</string>
+    <string name="col_outflow">Abflussspalte (Optional)</string>
+    <string name="col_type">Typspalte (Zu/Abfluss)</string>
+    <string name="col_amount">Betragsspalte</string>
+    <string name="col_none">Keine</string>
+    <string name="preview_rows_count">%1$d Zeilen erkannt · %2$d Buchungen bereit</string>
+    <string name="save_and_visualize">Speichern &amp; visualisieren</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="retry">Wiederholen</string>
+    <string name="delete">Löschen</string>
+    <string name="rename">Umbenennen</string>
+    <string name="save">Speichern</string>
+
+    <string name="reports_title">Gespeicherte Berichte</string>
+    <string name="reports_empty">Noch keine Berichte gespeichert. Importieren Sie eine Excel-Datei oder Vorlage.</string>
+    <string name="ledger_preview">Aktuelle Cashflow-Buchungen</string>
+    <string name="entries_count">%1$d Buchungen</string>
+    <string name="cloud_badge">Synchronisiert</string>
+    <string name="private_badge">Privat</string>
+
+    <string name="settings_title">Arbeitsbereich &amp; Einstellungen</string>
+    <string name="settings_currency">Anzeigewährung</string>
+    <string name="settings_convert_rates">Beträge mit Referenzkursen umrechnen</string>
+    <string name="settings_convert_rates_desc">Wenn deaktiviert, behält Novie die Originalzahlen bei und ändert nur das Währungssymbol.</string>
+    <string name="settings_language">App-Sprache</string>
+    <string name="settings_storage">Speicher- &amp; Sync-Modus</string>
+    <string name="sync_local_to_cloud">Private Berichte in Google Sync hochladen</string>
+    <string name="sync_success_msg">%1$d Bericht(e) mit Google Cloud synchronisiert.</string>
+    <string name="auth_gate_title">Google Sync verbinden</string>
+    <string name="auth_gate_desc">Melden Sie sich mit Google an, um Cloud-Berichte anzuzeigen, oder wechseln Sie zurück zum Privatmodus.</string>
+    <string name="export_success">Excel-.xlsx-Vorlage erfolgreich gespeichert.</string>
+    <string name="choose_another_file">Datei wählen</string>
+    <string name="parsing_file_status">Excel- / CSV-Datei wird gelesen…</string>
+    <string name="no_mapped_entries_hint">Keine gültigen Beträge in diesen Spalten gefunden. Passen Sie Zufluss, Abfluss oder Betrag oben an.</string>
+</resources>

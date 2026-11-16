@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Novie</string>
+    <string name="tagline">Intelligence Exécutive de Trésorerie</string>
+    <string name="nav_dashboard">Tableau</string>
+    <string name="nav_charts">Graphiques</string>
+    <string name="nav_reports">Rapports</string>
+    <string name="nav_settings">Paramètres</string>
+
+    <string name="welcome_title">Transformez vos fichiers Excel en visuels clairs</string>
+    <string name="welcome_subtitle">Choisissez comment Novie stocke vos rapports financiers. Modifiable à tout moment.</string>
+    <string name="mode_private_title">Privé sur l\'appareil</string>
+    <string name="mode_private_desc">Stockage SQLite local. Vos classeurs Excel ne quittent jamais cet appareil.</string>
+    <string name="mode_cloud_title">Synchronisation Google</string>
+    <string name="mode_cloud_desc">Sauvegarde Cloud Firestore en temps réel liée à votre compte Google.</string>
+    <string name="continue_private">Continuer en mode privé</string>
+    <string name="sign_in_google">Se connecter avec Google</string>
+    <string name="sign_out">Se déconnecter</string>
+    <string name="signed_in_as">Connecté en tant que %1$s</string>
+
+    <string name="import_excel">Importer MS Excel</string>
+    <string name="import_excel_sub">Sélectionner un fichier .xlsx ou .csv</string>
+    <string name="sample_templates_title">Modèles Excel intégrés</string>
+    <string name="sample_templates_sub">Visualisez un flux réaliste en un clic ou exportez en .xlsx</string>
+    <string name="load_template">Visualiser</string>
+    <string name="export_xlsx">Exporter .xlsx</string>
+    <string name="template_saas_title">Trésorerie Startup SaaS</string>
+    <string name="template_saas_sub">9 mois · MRR, Entreprise, Paie, Cloud</string>
+    <string name="template_retail_title">Grand Livre Retail &amp; E-Commerce</string>
+    <string name="template_retail_sub">6 mois · Boutique, Web, Stocks, Logistique</string>
+    <string name="template_studio_title">Flux Annuel Studio Créatif</string>
+    <string name="template_studio_sub">6 mois · Forfaits, Projets, Prestataires</string>
+
+    <string name="kpi_inflow">Entrées Totales</string>
+    <string name="kpi_outflow">Sorties Totales</string>
+    <string name="kpi_net">Flux Net</string>
+    <string name="kpi_margin">Marge Opérationnelle</string>
+    <string name="kpi_burn">Dépense Mensuelle Moy.</string>
+    <string name="kpi_savings">Taux de Rétention</string>
+
+    <string name="chart_bar_grouped">Barres</string>
+    <string name="chart_bar_stacked">Empilé</string>
+    <string name="chart_pie_donut">Secteurs</string>
+    <string name="chart_line_trend">Tendance</string>
+    <string name="chart_inflow">Entrées</string>
+    <string name="chart_outflow">Sorties</string>
+    <string name="chart_net">Net</string>
+    <string name="chart_cumulative">Solde Cumulé</string>
+    <string name="chart_toggle_outflow">Part Sorties</string>
+    <string name="chart_toggle_inflow">Part Entrées</string>
+    <string name="chart_center_total">Total</string>
+    <string name="chart_tap_hint">Touchez une barre, un secteur ou un point pour explorer</string>
+
+    <string name="ai_insights_title">Analyses Financières IA</string>
+    <string name="ai_insights_subtitle">Synthèse exécutive de trésorerie par Gemini</string>
+    <string name="ai_analyze_btn">Analyser avec l\'IA</string>
+    <string name="ai_reanalyze_btn">Actualiser l\'analyse</string>
+    <string name="ai_analyzing">Analyse des flux de trésorerie…</string>
+    <string name="ai_findings_header">Constats Clés</string>
+    <string name="ai_recommendations_header">Actions Recommandées</string>
+
+    <string name="empty_dashboard_title">Aucun rapport chargé</string>
+    <string name="empty_dashboard_desc">Importez un fichier MS Excel (.xlsx / .csv) ou chargez un modèle ci-dessous pour générer vos graphiques.</string>
+
+    <string name="import_preview_title">Mapper les colonnes Excel</string>
+    <string name="report_title_label">Titre du rapport</string>
+    <string name="sheet_label">Feuille</string>
+    <string name="base_currency_label">Devise source</string>
+    <string name="col_period">Colonne Période / Date</string>
+    <string name="col_category">Colonne Catégorie</string>
+    <string name="col_inflow">Colonne Entrées (Optionnel)</string>
+    <string name="col_outflow">Colonne Sorties (Optionnel)</string>
+    <string name="col_type">Colonne Type (Entrée/Sortie)</string>
+    <string name="col_amount">Colonne Montant</string>
+    <string name="col_none">Aucun</string>
+    <string name="preview_rows_count">%1$d lignes détectées · %2$d écritures prêtes</string>
+    <string name="save_and_visualize">Enregistrer et visualiser</string>
+    <string name="cancel">Annuler</string>
+    <string name="retry">Réessayer</string>
+    <string name="delete">Supprimer</string>
+    <string name="rename">Renommer</string>
+    <string name="save">Enregistrer</string>
+
+    <string name="reports_title">Rapports Enregistrés</string>
+    <string name="reports_empty">Aucun rapport enregistré. Importez un fichier Excel ou lancez un modèle.</string>
+    <string name="ledger_preview">Écritures Récentes</string>
+    <string name="entries_count">%1$d écritures</string>
+    <string name="cloud_badge">Synchronisé</string>
+    <string name="private_badge">Privé</string>
+
+    <string name="settings_title">Espace &amp; Préférences</string>
+    <string name="settings_currency">Devise d\'affichage</string>
+    <string name="settings_convert_rates">Convertir les montants selon les taux indicatifs</string>
+    <string name="settings_convert_rates_desc">Désactivé, Novie conserve les chiffres bruts et applique uniquement le symbole choisi.</string>
+    <string name="settings_language">Langue de l\'application</string>
+    <string name="settings_storage">Mode de stockage et synchro</string>
+    <string name="sync_local_to_cloud">Envoyer les rapports privés vers Google Sync</string>
+    <string name="sync_success_msg">%1$d rapport(s) synchronisé(s) vers Google Cloud.</string>
+    <string name="auth_gate_title">Connecter Google Sync</string>
+    <string name="auth_gate_desc">Connectez-vous avec Google pour synchroniser vos rapports cloud, ou revenez au mode privé.</string>
+    <string name="export_success">Modèle Excel .xlsx enregistré avec succès.</string>
+    <string name="choose_another_file">Autre fichier</string>
+    <string name="parsing_file_status">Lecture du fichier Excel / CSV…</string>
+    <string name="no_mapped_entries_hint">Aucun montant valide détecté pour ces colonnes. Ajustez les colonnes Entrées, Sorties ou Montant ci-dessus.</string>
+</resources>
